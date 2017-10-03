@@ -1,6 +1,6 @@
 {
   "author": "Lloyd Hilaiel <lloyd@hilaiel.com> (http://lloyd.io)",
-  "name": "convict",
+  "name": "browser-convict",
   "description": "Featureful configuration management library for Node.js (nested structure, schema validation, etc.)",
   "keywords": [
     "configuration",
@@ -39,14 +39,6 @@
     "lib"
   ],
   "main": "lib/convict.js",
-  "dependencies": {
-    "depd": "1.1.1",
-    "json5": "0.5.1",
-    "lodash.clonedeep": "4.5.0",
-    "moment": "2.18.1",
-    "validator": "7.2.0",
-    "yargs-parser": "7.0.0"
-  },
   "devDependencies": {
     "coveralls": "2.13.1",
     "eslint": "4.6.1",
@@ -54,6 +46,9 @@
     "mocha": "3.5.3",
     "must": "0.13.4",
     "obj_diff": "0.3.0"
+  },
+  "peerDependencies": {
+    "ramda": ">= 0.21.0"
   },
   "browserify": {
     "transform": [
